@@ -33,7 +33,7 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect('mongodb://localhost/conduit');
+  mongoose.connect('mongodb://sqops:sqops321@10.0.13.102:27017,10.0.13.6:27017,10.0.13.184:27017/conduit?authSource=admin&replicaSet=rs10');
   mongoose.set('debug', true);
 }
 
