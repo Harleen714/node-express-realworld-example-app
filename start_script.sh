@@ -1,4 +1,4 @@
 #!/bin/bash
 npm install
-npm i dotenv
+npm i .env
 pm2 start app.js
